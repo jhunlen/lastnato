@@ -24,6 +24,10 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Loading square for squar.red network -->
+    <div class="loader-wrapper">
+<span class="loader"><span class="loader-inner"></span></span>
+    
     <!-- NAVIGATION -->
     <div id="particles-js"></div>
 
@@ -450,6 +454,9 @@
 </script>
 <script type="text/javascript">
       $.stellar();
+  $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
     </script>
   </body>
 </html>
